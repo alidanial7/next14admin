@@ -1,14 +1,15 @@
 import React from "react";
-import Navbar from "./_ui/navbar";
-import Sidebar from "./_ui/sidebar";
+import Navbar from "./_ui/navbar/navbar";
+import Sidebar from "./_ui/sidebar/sidebar";
+import styles from "./dashboard.module.css";
 
 function DashboardLayout({ children }: { children: React.ReactNode }) {
   return (
-    <div>
-      <div>
+    <div className={styles.container}>
+      <div className={styles.menu}>
         <Sidebar />
       </div>
-      <div>
+      <div className={styles.content}>
         <Navbar />
         {children}
       </div>
