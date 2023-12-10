@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "./_ui/navbar/navbar";
 import Sidebar from "./_ui/sidebar/sidebar";
 import styles from "./dashboard.module.css";
+import Footer from "./_ui/footer/footer";
 
 function DashboardLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -12,6 +13,7 @@ function DashboardLayout({ children }: { children: React.ReactNode }) {
       <div className={styles.content}>
         <Navbar />
         {children}
+        <Footer />
       </div>
     </div>
   );
